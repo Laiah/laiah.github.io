@@ -1,0 +1,233 @@
+/* -------- TYPOGRAPHY -------- */
+@font-face {
+	font-family: "Aniron";
+	src: url("../fonts/anirm.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Tengwar";
+	src: url("../fonts/tngani.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Party-business";
+	src: url("../fonts/partybusiness.ttf");
+	font-weight: normal;
+} 
+
+nav, h2, .alive, .nav-pills {
+	font-family: "Aniron";
+}
+
+.symbole {
+	font-family: "Tengwar";
+	color: #FF5F01;
+	font-size: 1.3em;
+}
+
+#carousel-header, .fichePerso {
+	font-family: "Party-business";
+}
+
+/* -------- NAVBAR -------- */
+.header {
+	padding: 0;
+}
+
+.btn-navbar span{
+	background-color: white;
+}
+.menu-top {
+	background-color: #FF5F01;
+	display: flex;
+	margin-bottom: 0;
+}
+.menu-top .container-fluid {
+	width: 100%;
+	padding: 0;
+}
+.logo {
+	margin-top: 1.5vh;
+	padding-left: 2%;
+}
+
+.menu-top ul {
+	display: flex;
+}
+
+.menu-top li {
+	list-style-type: none;
+	border-right: 1px solid white;
+	text-align: center;
+	margin-top: 1.5vh;
+}
+
+.menu-top li:last-child {
+	border-right : none;
+}
+
+.menu-top a {
+	color: white;
+	font-size: 1.4em;
+	height: 100%;
+	display: ruby;
+}
+
+/* -------- CAROUSEL -------- */
+.text-banner {
+	position: absolute;
+	top: 30%;
+	color: white;
+	left: 15%;
+}
+
+.text-banner h1 {
+	font-size: 4em;
+}
+
+.text-banner p {
+	font-size: 2.5em;
+}
+
+.troisieme {
+	left: 50%;
+	top: 40%;
+}
+
+/* -------- FELLOWS -------- */
+.fellows h2 {
+	display: inline-block;
+}
+
+.fellows .symbole-fellows {
+	margin-left: 10%;
+}
+
+.nav-pills {
+	margin-top: 2vh;
+	margin-bottom: 5vh;
+}
+
+.nav-pills a {
+	color: #141414;
+}
+
+.nav-pills li:first-child {
+	margin-left: 23%;
+}
+
+.nav-pills > li.active > a {
+	color: #FF5F01;
+	background-color: white; 
+}
+
+.nav-pills li.active a {
+	border-bottom: 3px solid #FF5F01;
+}
+
+.nav-pills > li.active > a:hover {
+	background-color: #eee;
+	color: #FF5F01;
+}
+
+.fichePerso {
+	background-color: #090909;
+	margin: 0 2%;
+}
+
+.fichePerso:first-child {
+	margin-left: 8%;
+}
+
+.fichePerso img {
+	width: 100%;
+	opacity: 0.6;
+}
+
+.fichePerso .reward {
+	position: absolute;
+	background-color: white;
+	z-index: 2;
+	border-radius: 10px;
+	text-align: center;
+	width: 70%;
+	top: 10vh;
+	left: 15%;
+	font-size: 1.8em;
+	opacity: 0.9;
+}
+
+.fichePerso span {
+	color: #FF5F01;
+}
+
+.fichePerso h3 {
+	position: absolute;
+	bottom: 25vh;
+	font-size: 3em;
+	color: white;
+	left: 25%;
+}
+
+.fichePerso:hover .reward {
+	visibility: hidden;
+}
+
+.fichePerso:hover h3 {
+	bottom: 15vh;
+	font-size: 1.5em;
+	left: 45%;
+}
+
+.fichePerso p:last-child {
+	color: white;
+	font-size: 1.8em;
+}
+
+
+@media screen and (max-width: 992px) {
+	.menu-top ul {
+		display: contents;
+	}
+	.menu-top li {
+		border-right: none;
+		text-decoration: underline white;
+	}
+	.text-banner h1 {
+		font-size: 1.5em;
+	}
+
+	.text-banner p {
+		font-size: 1.2em;
+	}
+
+	.fellows h2 {
+		font-size: 1.2em;
+	}
+
+	.fellows h2, .fellows .alive {
+		font-size: 1.2em;
+	}
+
+	.nav-pills a {
+		font-size: 0.8em;
+	}
+
+	.nav-pills li:first-child {
+		margin-left: 26%;
+	}
+
+	.nav-pills li.active {
+		margin: 2% 17%;
+	}
+
+	.nav-pills li.third {
+		margin-left: 22%;
+	}
+
+	.fichePerso {
+		margin: 2% 7%;
+	}
+}
