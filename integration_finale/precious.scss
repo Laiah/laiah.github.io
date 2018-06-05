@@ -1,0 +1,35 @@
+@import "findtheprecious-style.css";
+@mixin ring($size, $color) {
+  border-radius: 100%;
+  box-shadow: $size/10 ($size/10)/2 ($size/10)/2 $color, inset $size/10 ($size/10)/2 ($size/10)/2 $color;
+  border: $size/6 solid $color;
+  height : $size*2;
+  width : $size*2;
+}
+
+h1, h2, h3 {
+  font-family: "Aniron";
+  text-align : center;
+}
+
+.orange-ring {
+  @include ring(30px, orange);
+  display: inline-block;
+}
+
+.yellow-ring {
+  @include ring(80px, gold);
+  margin : auto;
+}
+
+@for $i from 1 through 6 {
+  .several-rings:nth-child(#{$i}) {
+    @include ring(15px*($i/2), darken(darkgray, 20%));
+    margin-right : -(15px*($i/2+1))*0.95;
+  }
+}
+
+.several-rings {
+  display: inline-block;
+  vertical-align: middle;
+}
